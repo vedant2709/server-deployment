@@ -10,7 +10,20 @@ services:
       - key: JWT_SECRET
         value: hwrkjbjvflkfvnlknlk
       - key: GOOGLE_APPLICATION_CREDENTIALS
-        value: serviceAccountKey.json # optional if handled in code
+        value: {
+                  "type": "service_account",
+                  "project_id": "fir-d32ac",
+                  "private_key_id": "721da47f729d039960108381a70e63e197f7e0b3",
+                  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCilYQs5i0lS9Ni\n5hNELD0AnLd3lh6GASdL2YcHHbZ8EAAZSZN02l29TZuxBO+xOVspdyXoscwyll8j\n5CcLWTJWGmjFaF0F814+B5a61gPROYlAknWpJgSiBU5Rl/Jpf52AAG1P3b6XPCcI\nXmeWDngtH85S9hKUvSIUUBJWajpxGs22KGRBo1nnl2we68BluGF1zrlN/Peb40oO\nqlBjJtQrloZHKCfCgKlviEsckjv0IbQ0Lmbg74h0PyEQlptrlcBfNAL8Mfe80jJ2\nVNnIYE9RYZP/7dMchwPjrFsyvh/R557n9OTXzTuVq68fvckk8Je6DwVGz8VLSb7x\npe7XfQ8pAgMBAAECggEAEwQUW9EHNj3GaWKaHcbj0qrBza+l/cvsPfOhFqy7v4p6\njHqdz9TLknzdiSiX5V1dQ34PVcZX6RHL6m2AwJPL7qSznOU+PhgvLWejUlJ+S04k\ntsP6lZBgCdg/hw0T2hGGSSajomv/4v3y3ch26qbiGPsHnY3w8esmLYSJBIjzsW8+\nhj5XTSwEHMCPwfZ6aGXWhtA2CbLATaNt57OhbJqoyDhLn2X5WcTl0hd31rmCqWpc\ntUp5epVSSXT6+Qauw4Hee00OmTIZDTU6uhuEGiy8FszagrTE+3FAEafYvMZr+vY1\n6pn9/pisPg6ReSWUig/LQgX3Omzq19Jzh+xwCIFPgQKBgQDbnpcE+/QHcxUMpO0y\n2rAmNJ9iTg/GFJIjvDoqRbNB72qOGp7lKziCQ+0C8Th1C1336zPeRkOFq5I2qTt5\nhjsJ72tYNYMKNt1g7QFE6QKUQ9lC8T5K+sFrMrhE/itg3VrY46Y5NhMYzvwEaSH9\nEyTKKV6wOJrxi1+2hRd06+iZaQKBgQC9hDkCYG8Y/F1I5APeD2lalbKYzdqkIJqH\n5Y+ll/4KfJfIIA8ZvNqjwo2zJta2XyH+6G3FXFEw1osNjeqhtcZ0CWtXWWALBy/T\nXtHxNc3jJTaVJx+Oq7Zd6A3DvjDIWAa4WMoN4DVLXxXP4KVXtT2V+y+Vvd9JiNk/\nSrv7VDpPwQKBgDvIf/OrYlJk0WYPv0IIpcrAqGJqPYD+OInhwzOepZ1dPvRP6tEX\nYtqTAwG6CFRUM9A5BnWLSvYoLjUS/E2obInX0rDAYFt3c+vemGnZxAn4Ljw6z2o5\nuE0mEWM2jThhCUnhLm6Eec5XCeNpewcZHvqpKE1wGz2FYxicQjZhwX+BAoGAK7G+\niyO8uaAFyfZ4Rcx719zHzp83l7vEpSxyUBWZBsXvIL7zfFWkezkx/mon+ug4KFNi\na6x7M61jZf6gaCRG2x4I15zNnf1MM4mbEef7zjEYQo9AoV5Jr6D++3BwQuC4u+wM\nueJFp1kG6GS8+lnZFylQsU+TmZqprAQJD0s+HoECgYAyTpYXiBCluLC2r6mHGqYM\njpr+uhin7l+80jBPH0w4rZnryIhHSPquU4RHIOmWo+5wyo9mekShctf9ca9CwlQl\nvHApBlRwKVk0b62dpZySCcODOLZBfmN++Pjo777GfPep8SzmAph511XbMUxrR8GU\n51PrsGDcEtqIt0qu5YkH5g==\n-----END PRIVATE KEY-----\n",
+                  "client_email": "firebase-adminsdk-fbsvc@fir-d32ac.iam.gserviceaccount.com",
+                  "client_id": "113876757662813687727",
+                  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                  "token_uri": "https://oauth2.googleapis.com/token",
+                  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40fir-d32ac.iam.gserviceaccount.com",
+                  "universe_domain": "googleapis.com"
+                }
+
     autoDeploy: true
     branch: main
     repo: https://github.com/vedant2709/server-deployment

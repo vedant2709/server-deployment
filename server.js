@@ -5,9 +5,16 @@ const app = express();
 const authRoutes = require("./routes/auth");
 const authenticate = require("./middlewares/auth");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 
 app.use(cookieParser());
 app.use(express.json());
+app.use(
+  cors({
+    origin: "http://localhost:5173", // or your frontend domain
+    credentials: true,
+  })
+);
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/auth", authRoutes);

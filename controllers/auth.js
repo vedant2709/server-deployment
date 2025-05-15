@@ -22,7 +22,7 @@ const registerUser = async (req, res) => {
 
     return res.status(201).json({ message: "User registered", id: userDoc.id });
   } catch (error) {
-    return res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: error.message });
   }
 };
 
@@ -62,7 +62,7 @@ const loginUser = async (req, res) => {
       user: { name: user.name, email: user.email },
     });
   } catch (error) {
-    return res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: error.message });
   }
 };
 
